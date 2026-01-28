@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Certificate" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="df08f51a-4931-4448-84ca-93bec6383b85">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="ColoredField">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Dark".equals($P{certTextColor})]]></conditionExpression>
+			<style forecolor="#000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Light".equals($P{certTextColor})]]></conditionExpression>
+			<style forecolor="#FFFFFF"/>
+		</conditionalStyle>
+	</style>
+	<style name="ColoredLine">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Dark".equals($P{certTextColor})]]></conditionExpression>
+			<style forecolor="#000000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Light".equals($P{certTextColor})]]></conditionExpression>
+			<style forecolor="#FFFFFF"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="bg" class="java.lang.String"/>
+	<parameter name="certTextColor" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="participant"/>
+	</field>
+	<background>
+		<band height="842" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement x="0" y="0" width="595" height="842" isPrintWhenDetailOverflows="true" uuid="d090b6d9-0fb2-4bdd-a4ef-bc0ca175a308">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{bg}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<detail>
+		<band height="842" splitType="Stretch">
+			<staticText>
+				<reportElement style="ColoredField" x="0" y="200" width="594" height="50" uuid="b869058c-c7a7-4714-97b2-06ba7b641b65">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Tahoma" size="34" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Finisher Certificate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="0" y="236" width="594" height="25" uuid="27cc5236-51ce-4418-9766-f12b11735600">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Tahoma" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[We wish to congratulate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="347" y="480" width="90" height="32" uuid="fadb737e-897f-4b6f-b9ea-92b9c682ba8a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Overall]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" mode="Transparent" x="427" y="480" width="90" height="32" uuid="5a8f7799-666c-4697-acec-05e6a3d791dd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1 of 4980]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="47" y="350" width="500" height="60" uuid="1c84d3b3-3d21-4885-93ab-de9910d17afb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[has completed 1/2 Marathon with an official time of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="0" y="410" width="594" height="70" uuid="46114980-76f5-4d0e-9604-53699c88dbdd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="50" isBold="true"/>
+				</textElement>
+				<text><![CDATA[01:06:43]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="347" y="512" width="90" height="32" uuid="9287904a-74e8-4fa0-9170-3c31a86716fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" mode="Transparent" x="427" y="512" width="90" height="32" uuid="055d597d-c9e1-45b0-a73c-4b977772d1b4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1 of 3676]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="347" y="544" width="90" height="32" uuid="7f0353f2-87d8-4958-b0b5-7e489a7a859f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" mode="Transparent" x="427" y="544" width="90" height="32" uuid="9f40e721-b5ec-4fdb-93ff-5fdbd06b5512">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1 of 543]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="347" y="576" width="90" height="32" uuid="9cfed1bc-af21-4306-bb1a-b40683ec60a4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gun Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" mode="Transparent" x="427" y="576" width="90" height="32" uuid="c6d98cf9-f6a6-4ab6-964e-dc336b107e98">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[01:06:46]]></text>
+			</staticText>
+			<line>
+				<reportElement style="ColoredLine" x="347" y="515" width="180" height="1" uuid="5635c02c-4f46-4b78-9640-bda06f2a10c4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement style="ColoredLine" x="347" y="547" width="180" height="1" uuid="67e277bb-c9d8-4c19-95ed-1984ac715fcd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement style="ColoredLine" x="347" y="579" width="180" height="1" uuid="5cfb869c-212b-4a1a-8418-4c6fb4c83c61">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement style="ColoredLine" x="347" y="611" width="180" height="1" uuid="d398687c-08c8-4277-a73c-e9fba48f8d39"/>
+			</line>
+			<staticText>
+				<reportElement style="ColoredField" x="0" y="261" width="594" height="89" uuid="f4b8cc27-9815-4a64-97d6-7e8279042a6b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="34" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Emma Watson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="71" y="493" width="140" height="24" uuid="e0b3e290-0380-4b6c-869c-3105da06cba7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CP1 (5 KM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="71" y="517" width="140" height="24" uuid="24b17766-c13e-4173-81a6-94f83498cd10">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CP2 (10 KM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="71" y="541" width="140" height="24" uuid="27d1ee7e-5599-4b19-8d29-5a9661eba5f2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CP3 (14 KM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="71" y="589" width="140" height="24" uuid="3eb3565b-f2c1-434b-b50d-c6ba8be85516">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FINISH (20 KM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="71" y="565" width="140" height="24" uuid="f906752d-386c-4359-aff1-2a0b0246104a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CP4 (19 KM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="211" y="493" width="100" height="24" uuid="6c9a8d4e-c722-497c-9bfe-a3ed2bb76787">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[00:16:32]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="211" y="517" width="100" height="24" uuid="0de98a20-f54f-458a-9343-ce88f6843462">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[00:32:27]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="211" y="541" width="100" height="24" uuid="1f386f11-1efb-4e81-b9fb-dbe3158c9927">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[00:46:47]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="211" y="565" width="100" height="24" uuid="d5a2906f-e401-4346-89fe-455abb8686e2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[01:01:31]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ColoredField" x="211" y="589" width="100" height="24" uuid="6e678eaa-5ff3-4cda-82f8-23648724d614">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[01:06:43]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
